@@ -1,0 +1,97 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    margin: 5vh 0px;
+
+    .box {
+      height: 10vh;
+      width: 10vh;
+      background-color: #475467;
+      margin-left: 5vw;
+    }
+
+    .shopBox {
+      display: flex;
+      justify-content: space-between;
+
+      p {
+        font-size: 1rem;
+        padding: 0px 1rem;
+        margin-top: 15px;
+        border-radius: 5px;
+        transition: all 0.5s ease;
+
+        &:hover {
+          background-color: #bec0cd;
+        }
+      }
+
+      .line {
+        height: 10px;
+        border: 1px solid black;
+        margin-top: 20px;
+      }
+    }
+
+    .phoneBox {
+      display: flex;
+      border-radius: 5px;
+      transition: all 0.5s ease;
+
+      &:hover {
+        background-color: #bec0cd;
+      }
+
+      .icon {
+        height: 1rem;
+        width: auto;
+        margin-top: 1rem;
+        margin-right: 10px;
+      }
+
+      p {
+        font-size: 1rem;
+        margin-top: 15px;
+      }
+    }
+
+    .downloadBox {
+      background-color: #475467;
+      display: flex;
+      border-radius: 8px;
+      margin-right: 1rem;
+
+      p {
+        color: white;
+        font-size: 1rem;
+        padding: 0px 1rem;
+        margin-top: 15px;
+        border-radius: 5px;
+        transition: all 0.5s ease;
+
+        &:hover {
+          background-color: #bec0cd;
+          color: black;
+        }
+      }
+
+      .line {
+        height: 10px;
+        border: 1px solid white;
+        margin-top: 20px;
+      }
+    }
+  }
+
+  .footer {
+    background-color: #bec0cd;
+    height: 15vh;
+  }
+}

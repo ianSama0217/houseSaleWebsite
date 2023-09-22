@@ -1,0 +1,81 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body .header {
+  display: flex;
+  justify-content: space-between;
+  margin: 5vh 0px;
+}
+body .header .box {
+  height: 10vh;
+  width: 10vh;
+  background-color: #475467;
+  margin-left: 5vw;
+}
+body .header .shopBox {
+  display: flex;
+  justify-content: space-between;
+}
+body .header .shopBox p {
+  font-size: 1rem;
+  padding: 0px 1rem;
+  margin-top: 15px;
+  border-radius: 5px;
+  transition: all 0.5s ease;
+}
+body .header .shopBox p:hover {
+  background-color: #bec0cd;
+}
+body .header .shopBox .line {
+  height: 10px;
+  border: 1px solid black;
+  margin-top: 20px;
+}
+body .header .phoneBox {
+  display: flex;
+  border-radius: 5px;
+  transition: all 0.5s ease;
+}
+body .header .phoneBox:hover {
+  background-color: #bec0cd;
+}
+body .header .phoneBox .icon {
+  height: 1rem;
+  width: auto;
+  margin-top: 1rem;
+  margin-right: 10px;
+}
+body .header .phoneBox p {
+  font-size: 1rem;
+  margin-top: 15px;
+}
+body .header .downloadBox {
+  background-color: #475467;
+  display: flex;
+  border-radius: 8px;
+  margin-right: 1rem;
+}
+body .header .downloadBox p {
+  color: white;
+  font-size: 1rem;
+  padding: 0px 1rem;
+  margin-top: 15px;
+  border-radius: 5px;
+  transition: all 0.5s ease;
+}
+body .header .downloadBox p:hover {
+  background-color: #bec0cd;
+  color: black;
+}
+body .header .downloadBox .line {
+  height: 10px;
+  border: 1px solid white;
+  margin-top: 20px;
+}
+body .footer {
+  background-color: #bec0cd;
+  height: 15vh;
+}/*# sourceMappingURL=style.css.map */
