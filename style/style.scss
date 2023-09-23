@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 
+//index.html CSS樣式 (header所有頁面共用)
 body {
   .header {
     display: flex;
@@ -15,16 +16,27 @@ body {
       width: 10vh;
       background-color: #475467;
       margin-left: 5vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .home {
+        text-decoration: none;
+        font-size: 1rem;
+        color: white;
+      }
     }
 
     .shopBox {
       display: flex;
       justify-content: space-between;
 
-      p {
+      a {
+        text-decoration: none;
         font-size: 1rem;
+        color: #475467;
         padding: 0px 1rem;
-        margin-top: 15px;
+        margin: 15px 0px;
         border-radius: 5px;
         transition: all 0.5s ease;
 
@@ -68,11 +80,12 @@ body {
       border-radius: 8px;
       margin-right: 1rem;
 
-      p {
-        color: white;
+      a {
+        text-decoration: none;
         font-size: 1rem;
+        color: white;
         padding: 0px 1rem;
-        margin-top: 15px;
+        margin: 15px 0px;
         border-radius: 5px;
         transition: all 0.5s ease;
 
@@ -92,6 +105,294 @@ body {
 
   .footer {
     background-color: #bec0cd;
-    height: 15vh;
+    height: 50vh;
+    padding: 5% 15%;
+    display: flex;
+    justify-content: space-between;
+
+    .searchHouse {
+      border: 0px solid black;
+      width: 30%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #475467;
+      border-radius: 8px;
+
+      a {
+        text-decoration: none;
+        font-size: 1.5rem;
+        color: white;
+        border-radius: 8px;
+        transition: all 0.5s ease;
+
+        &:hover {
+          background-color: grey;
+        }
+      }
+    }
+  }
+}
+
+//其他頁面mainArea背景設置
+.mainBackgroung {
+  background-color: #bec0cd;
+}
+
+//login.html CSS樣式
+.loginArea {
+  height: 80vh;
+
+  .loginInterface {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20vh;
+
+    .emailLabel,
+    .passwordLabel {
+      color: #344054;
+      font-size: 1.15rem;
+    }
+
+    .emailLabel {
+      margin-left: -330px;
+    }
+
+    .passwordLabel {
+      margin-left: -265px;
+    }
+
+    .email,
+    .password {
+      width: 30%;
+      font-size: 1.15rem;
+      background-image: url("../houseImg/icon/email.svg");
+      background-repeat: no-repeat;
+      background-position: 5px 0px; //水平偏移5px 垂直偏移0px
+      padding: 0px 2rem;
+      margin: 1rem 0px 1.25rem 0px;
+      border: none;
+      border-radius: 8px;
+    }
+
+    .circleQ {
+      height: 1.15rem;
+    }
+
+    .emailQ {
+      position: fixed;
+      top: 265px;
+      right: 455px;
+      z-index: 1;
+    }
+
+    .passwordQ {
+      position: fixed;
+      top: 342px;
+      right: 455px;
+      z-index: 1;
+    }
+
+    .inline {
+      width: 30%;
+      display: flex;
+      justify-content: space-between;
+
+      .checkboxGroup {
+        .checkbox {
+          border: none;
+        }
+      }
+
+      a {
+        text-decoration: none;
+        color: black;
+      }
+    }
+
+    .loginBtn {
+      margin-top: 2rem;
+      height: 4rem;
+      width: 16rem;
+      background-color: #475467;
+      color: white;
+      font-size: 1.35rem;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+    }
+  }
+}
+
+//CompanyProfile.html CSS樣式
+.companyInformationArea {
+  height: 80vh;
+  padding: 5% 30% 20% 30%;
+  display: flex;
+  flex-wrap: wrap;
+
+  .topArea,
+  .bottonArea {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0px;
+
+    .boxStyle {
+      height: 5rem;
+      width: 10rem;
+      background-color: #475467;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 8px;
+      transition: all 0.5s ease;
+
+      &:hover {
+        background-color: grey;
+      }
+    }
+  }
+}
+
+//Question.html CSS樣式
+.QuestionArea {
+  height: 80vh;
+}
+
+//AreaSearchPage.heml CSS樣式
+.AreaSearchArea {
+  height: 150vh;
+  // border: 1px solid red;
+  padding: 5% 20%;
+
+  .areaBox {
+    margin-bottom: 3%;
+    // border: 1px solid green;
+
+    h2 {
+      font-size: 2rem;
+      color: #474747;
+      font-weight: normal;
+    }
+
+    .GreyLine {
+      border: 1px solid #737373;
+      margin: 1rem 0px;
+    }
+
+    .areaLittleBox {
+      display: flex;
+      justify-content: space-between;
+
+      .littleBox {
+        width: 10rem;
+        display: flex;
+        justify-content: space-around;
+        padding: 10px 10px;
+        margin-bottom: 0.8rem;
+        background-color: #475467;
+        border-radius: 8px;
+        // border: 1px solid blue;
+
+        .checkbox {
+          height: 20px;
+          width: 20px;
+        }
+
+        p {
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+//houseList.html CSS樣式
+.houseListArea {
+  height: 120vh;
+  // border: 1px solid red;
+  padding: 0px 0px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  position: relative;
+
+  .listBox {
+    // border: 2px solid green;
+    margin: 0px 35%;
+    position: absolute;
+    top: 50px;
+    left: -150px;
+
+    .oneListElement {
+      margin-bottom: 5vh;
+      display: flex;
+
+      .houseImg {
+        background-color: #475467;
+        height: 20vh;
+        width: 20vh;
+        border-radius: 8px;
+        margin-right: 4rem;
+      }
+
+      .houseText {
+        h2 {
+          font-weight: lighter;
+          color: #474747;
+          margin-bottom: 0.5rem;
+        }
+
+        .bottonLine {
+          border-bottom: 1px solid #737373;
+          width: 300%;
+        }
+      }
+    }
+  }
+}
+
+//houseInformation.html CSS樣式
+.houseInformationArea {
+  height: 200vh;
+  padding: 0px 15%;
+
+  .houseInformationContent {
+    // border: 1px solid red;
+    padding: 5vh 0px;
+    display: flex;
+
+    .houseInformationImg {
+      background-color: #475467;
+      height: 20vh;
+      width: 20vh;
+      border-radius: 8px;
+      margin-right: 4rem;
+    }
+
+    .houseInformationText {
+      h2 {
+        font-weight: lighter;
+        color: #474747;
+        margin-bottom: 1rem;
+      }
+
+      .bottonLine {
+        border-bottom: 1px solid #737373;
+        width: 400%;
+      }
+    }
+  }
+
+  .mainContent {
+    height: 150vh;
+    width: 75vw;
+    background-color: white;
+    border-radius: 8px;
   }
 }

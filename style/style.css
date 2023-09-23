@@ -14,19 +14,29 @@ body .header .box {
   width: 10vh;
   background-color: #475467;
   margin-left: 5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .header .box .home {
+  text-decoration: none;
+  font-size: 1rem;
+  color: white;
 }
 body .header .shopBox {
   display: flex;
   justify-content: space-between;
 }
-body .header .shopBox p {
+body .header .shopBox a {
+  text-decoration: none;
   font-size: 1rem;
+  color: #475467;
   padding: 0px 1rem;
-  margin-top: 15px;
+  margin: 15px 0px;
   border-radius: 5px;
   transition: all 0.5s ease;
 }
-body .header .shopBox p:hover {
+body .header .shopBox a:hover {
   background-color: #bec0cd;
 }
 body .header .shopBox .line {
@@ -58,15 +68,16 @@ body .header .downloadBox {
   border-radius: 8px;
   margin-right: 1rem;
 }
-body .header .downloadBox p {
-  color: white;
+body .header .downloadBox a {
+  text-decoration: none;
   font-size: 1rem;
+  color: white;
   padding: 0px 1rem;
-  margin-top: 15px;
+  margin: 15px 0px;
   border-radius: 5px;
   transition: all 0.5s ease;
 }
-body .header .downloadBox p:hover {
+body .header .downloadBox a:hover {
   background-color: #bec0cd;
   color: black;
 }
@@ -77,5 +88,241 @@ body .header .downloadBox .line {
 }
 body .footer {
   background-color: #bec0cd;
-  height: 15vh;
+  height: 50vh;
+  padding: 5% 15%;
+  display: flex;
+  justify-content: space-between;
+}
+body .footer .searchHouse {
+  border: 0px solid black;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #475467;
+  border-radius: 8px;
+}
+body .footer .searchHouse a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: white;
+  border-radius: 8px;
+  transition: all 0.5s ease;
+}
+body .footer .searchHouse a:hover {
+  background-color: grey;
+}
+
+.mainBackgroung {
+  background-color: #bec0cd;
+}
+
+.loginArea {
+  height: 80vh;
+}
+.loginArea .loginInterface {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20vh;
+}
+.loginArea .loginInterface .emailLabel,
+.loginArea .loginInterface .passwordLabel {
+  color: #344054;
+  font-size: 1.15rem;
+}
+.loginArea .loginInterface .emailLabel {
+  margin-left: -330px;
+}
+.loginArea .loginInterface .passwordLabel {
+  margin-left: -265px;
+}
+.loginArea .loginInterface .email,
+.loginArea .loginInterface .password {
+  width: 30%;
+  font-size: 1.15rem;
+  background-image: url("../houseImg/icon/email.svg");
+  background-repeat: no-repeat;
+  background-position: 5px 0px;
+  padding: 0px 2rem;
+  margin: 1rem 0px 1.25rem 0px;
+  border: none;
+  border-radius: 8px;
+}
+.loginArea .loginInterface .circleQ {
+  height: 1.15rem;
+}
+.loginArea .loginInterface .emailQ {
+  position: fixed;
+  top: 265px;
+  right: 455px;
+  z-index: 1;
+}
+.loginArea .loginInterface .passwordQ {
+  position: fixed;
+  top: 342px;
+  right: 455px;
+  z-index: 1;
+}
+.loginArea .loginInterface .inline {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+}
+.loginArea .loginInterface .inline .checkboxGroup .checkbox {
+  border: none;
+}
+.loginArea .loginInterface .inline a {
+  text-decoration: none;
+  color: black;
+}
+.loginArea .loginInterface .loginBtn {
+  margin-top: 2rem;
+  height: 4rem;
+  width: 16rem;
+  background-color: #475467;
+  color: white;
+  font-size: 1.35rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+}
+
+.companyInformationArea {
+  height: 80vh;
+  padding: 5% 30% 20% 30%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.companyInformationArea .topArea,
+.companyInformationArea .bottonArea {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0px;
+}
+.companyInformationArea .topArea .boxStyle,
+.companyInformationArea .bottonArea .boxStyle {
+  height: 5rem;
+  width: 10rem;
+  background-color: #475467;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  transition: all 0.5s ease;
+}
+.companyInformationArea .topArea .boxStyle:hover,
+.companyInformationArea .bottonArea .boxStyle:hover {
+  background-color: grey;
+}
+
+.QuestionArea {
+  height: 80vh;
+}
+
+.AreaSearchArea {
+  height: 150vh;
+  padding: 5% 20%;
+}
+.AreaSearchArea .areaBox {
+  margin-bottom: 3%;
+}
+.AreaSearchArea .areaBox h2 {
+  font-size: 2rem;
+  color: #474747;
+  font-weight: normal;
+}
+.AreaSearchArea .areaBox .GreyLine {
+  border: 1px solid #737373;
+  margin: 1rem 0px;
+}
+.AreaSearchArea .areaBox .areaLittleBox {
+  display: flex;
+  justify-content: space-between;
+}
+.AreaSearchArea .areaBox .areaLittleBox .littleBox {
+  width: 10rem;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 10px;
+  margin-bottom: 0.8rem;
+  background-color: #475467;
+  border-radius: 8px;
+}
+.AreaSearchArea .areaBox .areaLittleBox .littleBox .checkbox {
+  height: 20px;
+  width: 20px;
+}
+.AreaSearchArea .areaBox .areaLittleBox .littleBox p {
+  color: white;
+}
+
+.houseListArea {
+  height: 120vh;
+  padding: 0px 0px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  position: relative;
+}
+.houseListArea .listBox {
+  margin: 0px 35%;
+  position: absolute;
+  top: 50px;
+  left: -150px;
+}
+.houseListArea .listBox .oneListElement {
+  margin-bottom: 5vh;
+  display: flex;
+}
+.houseListArea .listBox .oneListElement .houseImg {
+  background-color: #475467;
+  height: 20vh;
+  width: 20vh;
+  border-radius: 8px;
+  margin-right: 4rem;
+}
+.houseListArea .listBox .oneListElement .houseText h2 {
+  font-weight: lighter;
+  color: #474747;
+  margin-bottom: 0.5rem;
+}
+.houseListArea .listBox .oneListElement .houseText .bottonLine {
+  border-bottom: 1px solid #737373;
+  width: 300%;
+}
+
+.houseInformationArea {
+  height: 200vh;
+  padding: 0px 15%;
+}
+.houseInformationArea .houseInformationContent {
+  padding: 5vh 0px;
+  display: flex;
+}
+.houseInformationArea .houseInformationContent .houseInformationImg {
+  background-color: #475467;
+  height: 20vh;
+  width: 20vh;
+  border-radius: 8px;
+  margin-right: 4rem;
+}
+.houseInformationArea .houseInformationContent .houseInformationText h2 {
+  font-weight: lighter;
+  color: #474747;
+  margin-bottom: 1rem;
+}
+.houseInformationArea .houseInformationContent .houseInformationText .bottonLine {
+  border-bottom: 1px solid #737373;
+  width: 400%;
+}
+.houseInformationArea .mainContent {
+  height: 150vh;
+  width: 75vw;
+  background-color: white;
+  border-radius: 8px;
 }/*# sourceMappingURL=style.css.map */
